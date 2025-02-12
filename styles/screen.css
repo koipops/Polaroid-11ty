@@ -1,50 +1,76 @@
 body {
-    font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
-    padding: 0 40px;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
     text-align: center;
-}
-
-nav {
-    margin: 40px auto 0 auto;
-    width: 250px;
-    border-radius: 50px;
-    background: #212431;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
+    color: #333;
     margin: 0;
+}
+
+header {
+    text-align: left;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.hero h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.details {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+  
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+  
+p, ul {
+    font-size: 16px;
+    line-height: 1.6;
+}
+  
+ul {
+    list-style: none;
     padding: 0;
 }
-
-nav ul li {
-    list-style-type: none;
-    margin: 0;
+  
+li::before {
+    content: "(IMAGE HERE)";
+    margin-right: 8px;
 }
 
-nav ul li a {
-    display: inline-block;
+.cta {
+    background: #fff;
     padding: 20px;
-    color: #EAE8FF;
-    text-decoration: none;
-    font-size: 1.2em;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 30px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-h1 {
-    font-size: 8em;
-    letter-spacing: -2px;
+  
+.cta form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }
-
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
-
-img.about {
-    opacity: 0.5;
+  
+input[type="button"] {
+    background: #ff3b30;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
 }
