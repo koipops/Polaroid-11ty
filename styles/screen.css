@@ -17,8 +17,9 @@ header {
 
 h2 {
     font-family: "Inter", sans-serif;
-    font-size: 80px;
-    font-weight: bold;
+    font-size: 9em;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 .details {
@@ -34,40 +35,53 @@ h3 {
 }
   
 p, ul {
-    font-family: "Inter", sans-serif;
     font-size: 16px;
     line-height: 1.6;
 }
-  
-ul {
-    font-family: "Inter", sans-serif;
+
+.details ul li {
     list-style: none;
-    padding: 0;
+    padding-left: 35px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: left center;
 }
-  
-li::before {
-    font-family: "Inter", sans-serif;
-    content: "(IMAGE HERE)";
-    margin-right: 8px;
+
+.details ul .wifi {
+    background-image: url('/images/wifi-solid.svg');
+}
+
+.details ul .cloud {
+    background-image: url('/images/cloud-solid.svg');
+}
+
+.details ul .qr {
+    background-image: url('/images/qrcode-solid.svg');
+}
+
+.details ul .photo {
+    background-image: url('/images/photo-film-solid.svg');
 }
 
 .cta {
-    font-family: "Inter", sans-serif;
     text-align: center;
     margin: 40px auto;
 }
   
 .cta form {
-    font-family: "Inter", sans-serif;
     display: flex;
     gap: 10px;
     justify-content: center;
-    background: #fff; /* White background */
+    background: #b4b4b4;
     padding: 10px;
     border-radius: 8px;
     max-width: 500px;
     margin: auto;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
   
 input[type="text"] {
@@ -98,6 +112,6 @@ body {
 }
 
 img {
-    width: 600px;
+    width: 800px;
     height: auto;
   }
